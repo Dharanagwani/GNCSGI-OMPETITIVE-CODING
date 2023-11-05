@@ -1,0 +1,36 @@
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        string s1;
+        cin>>s1;
+        string ans="";
+        for(int i=0;i<n;i=i+2){
+        string a="";
+        a=a+s1[i];
+        a=a+s1[i+1];
+        if(a=="00"){
+            ans=ans+"A";
+        }
+        else if(a=="01"){
+            ans=ans+"T";
+        }
+        else if(a=="10"){
+            ans=ans+"C";
+        }
+        else{
+            ans=ans+"G";
+        }
+            
+        }
+        cout<<ans<<endl;
+    }
+    
+	return 0;
+}
