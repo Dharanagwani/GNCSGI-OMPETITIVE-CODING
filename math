@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    int x;
+	    cin>>n>>x;
+	    int cost=n*x;
+	    if(cost>9999 && cost<100000){
+	        int val=cost%100000;
+	        if(val!=0){
+	            cout<<"Yes";
+	        }
+	        else{
+	            cout<<"no";
+	        }
+	    }
+	}
+	return 0;
+}
